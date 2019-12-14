@@ -14,7 +14,7 @@ extension URL {
     static func urlForTopHeadlines() -> URL {
         return URL(string: Constants.URLs.topHeadlines)!
     }
-    static func urlForCustom() ->URL{
-        return URL(string: Constants.URLs.customSource)!
+    static func urlForCustom(url: String) ->URL{
+        return URL(string: url)!
     }
 }

@@ -11,13 +11,9 @@ import UIKit
 class HeadLineTableVC: UITableViewController {
     
     private var articleListVM: ArticleListViewModel!
-    /*var selectedImage:String?
-    var selectedtitle:String?
-    var selectdes: String?*/
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
         initLoad()
     }
     private func initLoad() {

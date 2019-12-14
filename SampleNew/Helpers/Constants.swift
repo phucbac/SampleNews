@@ -12,8 +12,11 @@ struct Constants {
     struct URLs {
         static let apiKey = "9fa95f16c3104c39a51aaf0bc40a5c1d"
         static let topHeadlines = "https://newsapi.org/v2/top-headlines?country=us&apiKey=" + apiKey
-        static let customSource="https://newsapi.org/v2/"
+        static let customSource="https://newsapi.org/v2/everything?q="
         
+    }
+    struct strArray{
+        static let EverthingArray: [String] = ["bitcoin", "apple", "earthquake", "animal"]
     }
     
 }
