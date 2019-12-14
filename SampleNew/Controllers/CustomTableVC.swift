@@ -11,7 +11,7 @@ class CustomTableVC: UIViewController,UIPickerViewDelegate, UIPickerViewDataSour
     private var customListVM: ArticleListViewModel!
     
     @IBOutlet weak var tblViewCustom: UITableView!
-    var querySearch: String = "bitcoin"
+    var querySearch: String = ""
     @IBOutlet weak var pickerViewEverything: UIPickerView!
     var pickerEverythingData: [String] = [String]()
     override func viewDidLoad() {
@@ -21,6 +21,7 @@ class CustomTableVC: UIViewController,UIPickerViewDelegate, UIPickerViewDataSour
         pickerEverythingData = Constants.strArray.EverthingArray
         self.tblViewCustom.delegate = self
         self.tblViewCustom.dataSource = self
+        querySearch = pickerEverythingData[0]
         initLoad()
     }
     private func initLoad() {
@@ -67,5 +68,14 @@ class CustomTableVC: UIViewController,UIPickerViewDelegate, UIPickerViewDataSour
         let articleVM = self.customListVM.articleAtIndex(indexPath.row)
         cell.configure(for: articleVM)
         return cell
+    }
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        let customVM = self.customListVM.articleAtIndex(indexPath.row)
+        
+        let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "HeadLineDetailVC") as! HeadLineDetailVC
+        
+        vc.detail = customVM
+        self.present(vc, animated: false, completion: nil)
     }
 }
