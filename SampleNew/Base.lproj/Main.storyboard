@@ -29,7 +29,7 @@
                                 </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="UserName" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tao-Xo-vH0">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="User Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tao-Xo-vH0">
                                 <rect key="frame" x="20" y="82" width="374" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -46,12 +46,20 @@
                                 <rect key="frame" x="20" y="153" width="374" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Save"/>
+                                <connections>
+                                    <action selector="ClickSave" destination="BYZ-38-t0r" eventType="touchUpInside" id="sdN-sa-ag6"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Profile" id="kTZ-3P-IS5"/>
+                    <tabBarItem key="tabBarItem" title="Profile" image="paperclip" catalog="system" id="kTZ-3P-IS5"/>
+                    <connections>
+                        <outlet property="btnSave" destination="KTr-Iz-pA7" id="ji6-Bw-DAY"/>
+                        <outlet property="lblUserName" destination="Tao-Xo-vH0" id="s5m-Jo-IVy"/>
+                        <outlet property="txtUserName" destination="alg-I8-nuV" id="bBe-bX-TVL"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -112,7 +120,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="lmu-CG-8LB"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Custom" id="eax-Yu-agy"/>
+                    <tabBarItem key="tabBarItem" title="Custom" image="tray.fill" catalog="system" id="eax-Yu-agy"/>
                     <connections>
                         <outlet property="pickerViewEverything" destination="ofb-gV-mfv" id="b5S-2h-fGA"/>
                         <outlet property="tblViewCustom" destination="skX-nA-bLD" id="y5i-xt-XBs"/>
@@ -162,7 +170,7 @@
                             <outlet property="delegate" destination="FsA-zX-sOH" id="BjX-7J-QYI"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Top" id="5fb-84-F1c"/>
+                    <tabBarItem key="tabBarItem" title="Top" image="house" catalog="system" id="5fb-84-F1c"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OY4-XV-Dqx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -230,4 +238,9 @@
             <point key="canvasLocation" x="-404" y="-125"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="house" catalog="system" width="64" height="54"/>
+        <image name="paperclip" catalog="system" width="62" height="64"/>
+        <image name="tray.fill" catalog="system" width="64" height="44"/>
+    </resources>
 </document>

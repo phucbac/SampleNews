@@ -3,11 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		4E21E50EF78227BE6E33486C /* Pods_SampleNew.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 298581CE9536323A47E0FC28 /* Pods_SampleNew.framework */; };
+		FDDDA15923A72760003FAC6D /* UserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDDDA15823A72760003FAC6D /* UserInfo.swift */; };
 		FDFECEB223A37645006D8B9D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDFECEB123A37645006D8B9D /* AppDelegate.swift */; };
 		FDFECEB423A37645006D8B9D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDFECEB323A37645006D8B9D /* SceneDelegate.swift */; };
 		FDFECEB923A37645006D8B9D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDFECEB723A37645006D8B9D /* Main.storyboard */; };
@@ -50,6 +51,7 @@
 		298581CE9536323A47E0FC28 /* Pods_SampleNew.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SampleNew.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4212B17BB8B6E19EBD55075 /* Pods-SampleNew.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SampleNew.release.xcconfig"; path = "Target Support Files/Pods-SampleNew/Pods-SampleNew.release.xcconfig"; sourceTree = "<group>"; };
 		D77F56285BAF496BAEF2B6BE /* Pods-SampleNew.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SampleNew.debug.xcconfig"; path = "Target Support Files/Pods-SampleNew/Pods-SampleNew.debug.xcconfig"; sourceTree = "<group>"; };
+		FDDDA15823A72760003FAC6D /* UserInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfo.swift; sourceTree = "<group>"; };
 		FDFECEAE23A37645006D8B9D /* SampleNew.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SampleNew.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDFECEB123A37645006D8B9D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FDFECEB323A37645006D8B9D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -109,7 +111,6 @@
 				D77F56285BAF496BAEF2B6BE /* Pods-SampleNew.debug.xcconfig */,
 				C4212B17BB8B6E19EBD55075 /* Pods-SampleNew.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -212,6 +213,7 @@
 			isa = PBXGroup;
 			children = (
 				FDFECEF423A377D9006D8B9D /* Article.swift */,
+				FDDDA15823A72760003FAC6D /* UserInfo.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -430,6 +432,7 @@
 				FDFECEB423A37645006D8B9D /* SceneDelegate.swift in Sources */,
 				FDFECEE723A37697006D8B9D /* HeadLineTableVC.swift in Sources */,
 				FDFECF0123A4ADFB006D8B9D /* CustomCell.swift in Sources */,
+				FDDDA15923A72760003FAC6D /* UserInfo.swift in Sources */,
 				FDFECEF323A377A2006D8B9D /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -605,6 +608,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7FDRN2K2HM;
 				INFOPLIST_FILE = SampleNew/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -624,6 +628,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7FDRN2K2HM;
 				INFOPLIST_FILE = SampleNew/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
