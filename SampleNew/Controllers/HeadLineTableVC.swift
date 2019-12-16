@@ -53,7 +53,8 @@ class HeadLineTableVC: UITableViewController {
         let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "HeadLineDetailVC") as! HeadLineDetailVC
         
         vc.detail = articleVM
-        self.present(vc, animated: false, completion: nil)
+        //self.present(vc, animated: true, completion: nil)
+        navigationController?.pushViewController(vc, animated: true)
     }
     
 }

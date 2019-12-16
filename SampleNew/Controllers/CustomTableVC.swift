@@ -76,6 +76,7 @@ class CustomTableVC: UIViewController,UIPickerViewDelegate, UIPickerViewDataSour
         let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "HeadLineDetailVC") as! HeadLineDetailVC
         
         vc.detail = customVM
-        self.present(vc, animated: false, completion: nil)
+        //self.present(vc, animated: false, completion: nil)
+        navigationController?.pushViewController(vc, animated: true)
     }
 }

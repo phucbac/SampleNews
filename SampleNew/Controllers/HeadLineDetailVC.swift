@@ -34,6 +34,9 @@ class HeadLineDetailVC: UIViewController {
         self.lblContent.text = detail?.content
         self.lblContent.sizeToFit()
     }
+    override func viewWillAppear(_ animated: Bool) {
+        navigationItem.title = "Detail"
+    }
     func getDataURL(from url: URL, completion: @escaping (Data?, URLResponse?, Error?) -> ()) {
         URLSession.shared.dataTask(with: url, completionHandler: completion).resume()
     }
